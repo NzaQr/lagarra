@@ -112,19 +112,8 @@ p {
   right: max(40px, env(safe-area-inset-right));
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 20px;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.brand-symbol {
-  height: 47px;
-  width: 47px;
-  display: grid;
-  place-items: center;
 }
 .top-actions {
   display: flex;
@@ -888,17 +877,6 @@ p {
     left: max(23px, env(safe-area-inset-left));
     right: max(23px, env(safe-area-inset-right));
   }
-  .brand strong {
-    font-size: 22px;
-  }
-  .brand-symbol {
-    height: 41px;
-    width: 41px;
-  }
-  .brand-subtitle {
-    font-size: 7px;
-    letter-spacing: 2px;
-  }
   .top-actions {
     gap: 2px;
   }
@@ -919,25 +897,6 @@ p {
     left: 20px;
     right: 14px;
     gap: 6px;
-  }
-  .brand {
-    gap: 8px;
-  }
-  .brand strong {
-    font-size: 20px;
-  }
-  .brand-symbol {
-    width: 34px;
-    height: 34px;
-  }
-  .brand-symbol svg {
-    width: 23px;
-    height: 23px;
-  }
-  .brand-subtitle {
-    font-size: 6px;
-    letter-spacing: 1.8px;
-    margin-top: 5px;
   }
   .collection-word,
   .nav-divider,
@@ -1147,36 +1106,17 @@ p {
   .result-note {
     bottom: 200px;
   }
-  .brand-symbol {
-    width: 34px;
-    height: 34px;
-  }
-  .brand-symbol svg {
-    width: 23px;
-    height: 23px;
-  }
-  .brand strong {
-    font-size: 21px;
-  }
 }
 @media (max-height: 500px) and (orientation: landscape) {
   .intro-note,
   .collection-preview,
-  .game-footer,
-  .brand-subtitle {
+  .game-footer {
     display: none;
   }
   .top-bar {
     top: max(8px, env(safe-area-inset-top));
     left: max(20px, env(safe-area-inset-left));
     right: max(20px, env(safe-area-inset-right));
-  }
-  .brand strong {
-    font-size: 19px;
-  }
-  .brand-symbol {
-    width: 30px;
-    height: 30px;
   }
   .top-actions .icon-button {
     height: 36px;

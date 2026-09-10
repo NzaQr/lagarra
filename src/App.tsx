@@ -214,11 +214,6 @@ export function App({
   return (
     <main className="game-ui" aria-label="La Garra claw machine game">
       <header className="top-bar">
-        <div className="brand" aria-label="La Garra">
-          <span className="brand-symbol">
-            <Icon name="claw" size={29} />
-          </span>
-        </div>
         <nav className="top-actions" aria-label="Game options">
           <button
             className="collection-button"
